@@ -1,0 +1,14 @@
+{
+  "canisters": {
+    "ticketing_system": {
+      "type": "custom",
+      "root": "src",
+      "main": "src/index.ts",
+      "ts": "src/index.ts",
+      "candid": "src/index.did",
+      "build": "npx azle ticketing_system",
+      "wasm": ".azle/ticketing_system/ticketing_system.wasm",
+      "gzip": true
+    }
+  }
+}
