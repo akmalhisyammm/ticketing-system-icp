@@ -218,7 +218,7 @@ export default Canister({
 
       let validatePayload = validateEventPayload(payload);
       if (validatePayload.length){
-        Err({ BadRequest: `Input validations failed. Errors=${validatePayload}` });
+        return Err({ BadRequest: `Input validations failed. Errors=${validatePayload}` });
       }
 
       // Create new event, insert it into storage and return it.
